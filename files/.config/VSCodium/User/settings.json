@@ -1,0 +1,14 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Sonokai Espresso",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "python.formatting.provider": "yapf",
+    "python.linting.mypyEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore="
+    ]
+}

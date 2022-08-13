@@ -1,0 +1,6 @@
+~/.zshrc
+~/.zshenv
+~/.bashrc
+~/.fonts.conf
+~/.config/micro
+~/.config/VSCodium/User/settings.json
