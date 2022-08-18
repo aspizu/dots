@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export PATH=~/.local/bin:$PATH
+
+. ~/.bash_profile

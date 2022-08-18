@@ -3,12 +3,22 @@
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Sonokai Espresso",
+    "workbench.colorTheme": "GitHub Dark Default",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "python.formatting.provider": "yapf",
     "python.linting.mypyEnabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore="
-    ]
+        "--ignore=E501,E402"
+    ],
+    "files.insertFinalNewline": true,
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontWeight": "400",
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "security.workspace.trust.enabled": false,
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    }
 }

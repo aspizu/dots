@@ -1,6 +1,8 @@
 ~/.zshrc
 ~/.zshenv
 ~/.bashrc
+~/.bash_login
+~/.bash_profile
 ~/.fonts.conf
 ~/.config/micro
 ~/.config/VSCodium/User/settings.json
