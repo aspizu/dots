@@ -1,3 +1,5 @@
+~/.Xresources
+~/.xinitrc
 ~/.zshrc
 ~/.zshenv
 ~/.bashrc
@@ -5,4 +7,6 @@
 ~/.bash_profile
 ~/.fonts.conf
 ~/.config/micro
+~/.config/alacritty
 ~/.config/VSCodium/User/settings.json
+~/.config/VSCodium/User/keybindings.json

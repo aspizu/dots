@@ -3,22 +3,24 @@
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "GitHub Dark Default",
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "black",
     "python.linting.mypyEnabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=E501,E402"
+        "--ignore=E501,E402,W503,E101,E111,E114,E115,E116,E117,E12,E13,E2,E3,E401,E5,E70,W1,W2,W3,W5"
     ],
     "files.insertFinalNewline": true,
-    "editor.fontFamily": "Cascadia Code",
+    "editor.fontFamily": "mono",
     "editor.fontWeight": "400",
     "editor.fontSize": 12,
     "terminal.integrated.fontSize": 12,
     "security.workspace.trust.enabled": false,
-    "workbench.iconTheme": "Monokai Pro Icons",
-    "[c]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    }
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        88
+    ],
+    "editor.inlayHints.enabled": "off",
 }

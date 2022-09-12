@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -r files/* ~
+cp -r files/. ~
