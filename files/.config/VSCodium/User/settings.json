@@ -24,5 +24,8 @@
     ],
     "editor.inlayHints.enabled": "off",
     "mesonbuild.configureOnOpen": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+    }
     // "window.titleBarStyle": "custom"
 }
