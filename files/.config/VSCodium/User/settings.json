@@ -11,16 +11,18 @@
         "--ignore=E501,E402,W503,E101,E111,E114,E115,E116,E117,E12,E13,E2,E3,E401,E5,E70,W1,W2,W3,W5"
     ],
     "files.insertFinalNewline": true,
-    "editor.fontFamily": "mono",
+    "editor.fontFamily": "Cascadia Code",
     "editor.fontWeight": "400",
     "editor.fontSize": 12,
     "terminal.integrated.fontSize": 12,
     "security.workspace.trust.enabled": false,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    // "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.rulers": [
         88
     ],
     "editor.inlayHints.enabled": "off",
+    "mesonbuild.configureOnOpen": true,
+    // "window.titleBarStyle": "custom"
 }

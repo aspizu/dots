@@ -5,7 +5,7 @@
 ~/.bashrc
 ~/.bash_login
 ~/.bash_profile
-~/.fonts.conf
+~/.config/fontconfig
 ~/.config/micro
 ~/.config/alacritty
 ~/.config/VSCodium/User/settings.json

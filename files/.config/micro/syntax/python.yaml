@@ -1,0 +1,45 @@
+filetype: "python"
+
+detect:
+  filename: "\\.py$"
+
+rules:
+  - string:
+      start: "[Rr]\""
+      skip: "\\\\."
+      end: "\""
+      rules: []
+  - string:
+      start: "[Rr]'"
+      skip: "\\\\."
+      end: "'"
+      rules: []
+  - string:
+      start: "[fF]\""
+      skip: "\\\\."
+      end: "\""
+      rules:
+        - special: "\\\\."
+        - special: "[ !-z|}~]\\{[ !-z|}~][ !-|~]*\\}[ !-|~]"
+  - string:
+      start: "[fF]'"
+      skip: "\\\\."
+      end: "'"
+      rules:
+        - special: "\\\\."
+  - string:
+      start: "\""
+      skip: "\\\\."
+      end: "\""
+      rules:
+        - special: "\\\\."
+  - string:
+      start: "'"
+      skip: "\\\\."
+      end: "'"
+      rules:
+        - special: "\\\\."
+  - comment:
+      start: "#"
+      end: "$"
+      rules: []
