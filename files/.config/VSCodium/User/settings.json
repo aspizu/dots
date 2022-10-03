@@ -17,13 +17,10 @@
     "terminal.integrated.fontSize": 12,
     "security.workspace.trust.enabled": false,
     "workbench.colorTheme": "Gruvbox Dark Medium",
-    // "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.rulers": [
         88
     ],
-    "editor.inlayHints.enabled": "off",
-    "mesonbuild.configureOnOpen": true,
     "[python]": {
         "editor.formatOnSave": true,
     }
