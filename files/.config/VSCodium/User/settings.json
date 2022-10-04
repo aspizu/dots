@@ -1,4 +1,5 @@
 {
+    "editor.inlayHints.enabled": "off",
     "workbench.startupEditor": "none",
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
@@ -21,8 +22,20 @@
     "editor.rulers": [
         88
     ],
+    "nim.provider": "lsp",
+    "nim.enableNimsuggest": false,
     "[python]": {
         "editor.formatOnSave": true,
+    },
+    "[scala]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+    },
+    "metals.javaHome": "/usr/lib/jvm/java-18-openjdk",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
     }
     // "window.titleBarStyle": "custom"
 }

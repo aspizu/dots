@@ -1,5 +1,6 @@
 #!/bin/bash
 
 export PATH=~/.local/bin:$PATH
+export PATH=/home/aspizu/.nimble/bin:$PATH
 
 . ~/.bash_profile

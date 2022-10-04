@@ -35,3 +35,4 @@ alias files='nautilus . &> /dev/null & disown'
 alias x='clear ; startx &> /dev/null ; clear'
 alias wifi='iwctl station wlan0'
 export PATH=$PATH:/home/aspizu/.spicetify
+alias clang='clang -Wall -Werror'
