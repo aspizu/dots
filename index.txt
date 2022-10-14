@@ -8,5 +8,6 @@
 ~/.config/fontconfig
 ~/.config/micro
 ~/.config/alacritty
+~/.config/VSCodium/User/product.json
 ~/.config/VSCodium/User/settings.json
 ~/.config/VSCodium/User/keybindings.json

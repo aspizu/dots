@@ -1,0 +1,23 @@
+filetype: goboscript
+
+detect:
+  filename: "\\.gs$"
+
+rules:
+  - function: "^\\s+[a-zA-Z0-9_]+"
+  - function: "def\\s+[a-zA-Z0-9_]+"
+  - statement: "\\b(def|onflag|if|elif|else|forever|repeat|until)\\b"
+  - literal: "\\b[0-9.]+\\b"
+  - operator: "[=,+\\-*/:.]"
+  - bracket: "[\\[\\]()]"
+  - special: "@[a-zA-Z0-9_]+"
+  - string:
+      start: "\""
+      skip: "\\\\."
+      end: "\""
+      rules:
+        - special: "\\\\."
+  - comment:
+      start: "#"
+      end: "$"
+      rules: []
