@@ -17,10 +17,10 @@
         "--ignore=E501,E402,W503,E101,E111,E114,E115,E116,E117,E12,E13,E2,E3,E401,E5,E70,W1,W2,W3,W5,E741,F403,F405"
     ],
     "files.insertFinalNewline": true,
-    "editor.fontFamily": "Cascadia Code",
+    "editor.fontFamily": "gloria",
     "editor.fontWeight": "400",
-    "editor.fontSize": 12,
-    "terminal.integrated.fontSize": 12,
+    "editor.fontSize": 11,
+    "terminal.integrated.fontSize": 11,
     "security.workspace.trust.enabled": false,
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "editor.minimap.enabled": false,
@@ -34,7 +34,7 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         },
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
     },
     "[scala]": {
         "editor.formatOnSave": true,
@@ -61,4 +61,11 @@
             }
         ]
     },
+    "python.analysis.diagnosticMode": "workspace",
+    "errorLens.exclude": [
+        "never used",
+        "unused"
+    ],
+    "errorLens.scrollbarHackEnabled": true,
+    "errorLens.messageBackgroundMode": "message",
 }

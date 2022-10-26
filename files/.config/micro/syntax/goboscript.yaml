@@ -4,12 +4,14 @@ detect:
   filename: "\\.gs$"
 
 rules:
-  - function: "^\\s+[a-zA-Z0-9_]+"
+  - function: "(^|[{;])\\s*[a-zA-Z0-9_]+"
   - function: "def\\s+[a-zA-Z0-9_]+"
-  - statement: "\\b(def|onflag|if|elif|else|forever|repeat|until)\\b"
+  - default: "[a-zA-Z0-9_]+\\s*="
+  - statement: "\\b(nowarp|def|onflag|if|elif|else|forever|repeat|until)\\b"
   - literal: "\\b[0-9.]+\\b"
-  - operator: "[=,+\\-*/:.]"
-  - bracket: "[\\[\\]()]"
+  - literal: "\\b(true|false)\\b"
+  - operator: "[=,+\\-*/:.;]"
+  - bracket: "[\\[\\](){}]"
   - special: "@[a-zA-Z0-9_]+"
   - string:
       start: "\""
@@ -18,6 +20,6 @@ rules:
       rules:
         - special: "\\\\."
   - comment:
-      start: "#"
-      end: "$"
+      start: "/\\*"
+      end: "\\*/"
       rules: []
