@@ -4,6 +4,9 @@ set -e
 case $1 in
 --update)
   python gen_dotfiles.py | bash
+  git add .
+  git commit -am "BY dots.sh ON $(date)"
+  git push
   ;;
 --install)
   cp -r _HOME_/. $HOME
