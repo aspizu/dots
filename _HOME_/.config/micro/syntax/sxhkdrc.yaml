@@ -1,0 +1,20 @@
+filetype: sxhkdrc
+
+detect:
+  filename: "(^sxhkdrc$|/sxhkdrc$)"
+
+rules:
+  - statement: "\\b(super)\\b"
+  - type: "\\b(Return|Escape|ctrl|alt|Delete|shift|comma|period|bracketleft|bracketright|grave|Tab|space|Left|Right|Down|Up)\\b"
+  - type: "@[a-zA-Z]+"
+  - special: "\\b[a-zA-Z0-9]\\b"
+  - operator: "[+,]"
+  - bracket: "[{}]"
+  - string:
+      start: "\\s\\s"
+      end: "$"
+      rules: []
+  - comment:
+      start: "#"
+      end: "$"
+      rules: []

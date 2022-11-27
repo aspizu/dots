@@ -1,0 +1,44 @@
+super + Escape
+  pkill -USR1 -x sxhkd; notify-send -t 500 'Reloaded sxhkd config'
+
+super + s
+  maim -s --format png /dev/stdout | xclip -selection clipboard -t image/png -i; notify-send 'Screenshot copied to clipboard'
+
+super + Return
+  alacritty
+
+super + e
+  rofi -show drun
+
+ctrl + alt + Delete
+  ~/Scripts/powermenu.sh
+
+super + alt + q
+  ~/Scripts/logoutmenu.sh
+
+super + w
+  bspc node -c
+
+super + space
+  playerctl play-pause; notify-send -t 500 $(playerctl status)
+
+super + {t,shift + t,d,f}
+  bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+super + {_,shift + }{h,j,k,l}
+  bspc node -{f,s} {west,south,north,east}
+
+super + {_,shift + }Tab
+  bspc node -f {next,prev}.local.!hidden.window
+
+super + {_,shift + }{1-9,0}
+  bspc {desktop -f,node -d} '^{1-9,10}'
+
+XF86Audio{Raise,Lower}Volume
+  pulsemixer --change-volume {+,-}5; notify-send -t 500 -h int:value:$(pulsemixer --get-volume | grep -o '^[0-9]*') "Volume"
+
+XF86AudioMute
+  pulsemixer --toggle-mute
+
+XF86MonBrightness{Up,Down}
+  backlight_control {+,-}5

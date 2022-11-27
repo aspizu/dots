@@ -1,0 +1,14 @@
+filetype: dotfiles
+
+detect:
+  filename: "dotfiles$"
+
+rules:
+  - operator: "[~]"
+  - type: "[a-zA-Z0-9\\-_.]*"
+  - special: "\\.[a-zA-Z0-9\\-_.]*"
+  - function: "[a-zA-Z0-9\\-_.]*/"
+  - comment:
+      start: "#"
+      end: "$"
+      rules: []

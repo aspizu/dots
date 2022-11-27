@@ -1,0 +1,31 @@
+# Dotfiles
+~/.xinitrc
+~/.zprofile
+~/.zshenv
+~/.zshrc
+~/.config
+  alacritty
+  bat
+  bspwm
+  fontconfig
+  gtk-3.0
+  gtk-4.0
+  Kvantum
+  micro
+    bindings.json
+    colorschemes
+    settings.json
+    syntax
+  nitrogen
+  picom
+  polybar
+  qt5ct
+  sxhkd
+  VSCodium
+    product.json
+    User
+      keybindings.json
+      settings.json
+~/Scripts
+/etc/pacman.conf
+/etc/default/grub

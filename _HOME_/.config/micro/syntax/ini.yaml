@@ -1,0 +1,21 @@
+filetype: ini
+
+detect:
+  filename: "\\.ini$"
+
+rules:
+  - function: "^\\[.*\\]"
+  - type: "^[a-zA-Z0-9\\-_]+"
+  - literal: "\\b[0-9]+\\b"
+  - literal: "\\b(true|false)\\b"
+  - statement: "{[a-zA-Z0-9\\-_.]+}"
+  - operator: "[=${}.]"
+  - string:
+      start: "\""
+      skip: "\\\\."
+      end: "\""
+      rules: []
+  - comment:
+      start: ";"
+      end: "$"
+      rules: []

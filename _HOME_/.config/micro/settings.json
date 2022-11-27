@@ -1,0 +1,8 @@
+{
+    "colorscheme": "aspizu",
+    "infobar": false,
+    "statusformatl": "",
+    "statusformatr": "\u003e $(filename) type: $(opt:filetype)",
+    "tabsize": 2,
+    "tabstospaces": true
+}
