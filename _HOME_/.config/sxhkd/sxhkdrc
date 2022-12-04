@@ -42,3 +42,6 @@ XF86AudioMute
 
 XF86MonBrightness{Up,Down}
   backlight_control {+,-}5
+
+super + b
+  if [ $(bspc config top_padding) -eq 0 ]; then bspc config top_padding 150; else bspc config top_padding 0; fi

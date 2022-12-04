@@ -4,10 +4,6 @@ detect:
   filename: "\\.sh$"
 
 rules:
-  - operator: "[~]"
-  - type: "[a-zA-Z0-9\\-_.]*"
-  - special: "\\.[a-zA-Z0-9\\-_.]*"
-  - function: "[a-zA-Z0-9\\-_.]*/"
   - literal: "\\$\\?"
   - literal: "\\$[a-zA-Z0-9\\-_]+"
   - function: "^\\s*[a-zA-Z0-9\\-_]+"
@@ -15,7 +11,7 @@ rules:
   - function: "\\$\\(\\s*[a-zA-Z0-9\\-_]+"
   - special: "\\b(sudo|doas)\\b"
   - literal: "^\\s*[a-zA-Z0-9\\-_]+="
-  - statement: "\\b(if|then|else|fi)\\b"
+  - statement: "\\b(if|then|else|fi|case|in|esac|for|do|done)\\b"
   - type: "\\s--[a-zA-Z0-9\\-_]+"
   - type: "\\s-[a-zA-Z]\\b"
   - operator: "[=;$]"
