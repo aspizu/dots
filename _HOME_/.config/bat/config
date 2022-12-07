@@ -25,4 +25,4 @@
 #--map-syntax ".ignore:Git Ignore"
 
 
---theme=gruvbox-dark
+--theme=Dracula
